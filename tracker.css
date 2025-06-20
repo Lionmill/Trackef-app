@@ -1,0 +1,75 @@
+body{
+    background-color: rgba(4, 20, 31, 0.9);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(67, 214, 219);
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+  background-color: rgb(50, 180, 185);
+  transition: 0.3s;
+}
+
+form{
+    display: grid;
+    justify-content:center;
+    border-radius:20px;
+    gap: 10px;
+    padding: 20px;
+}
+
+input{
+    background-color: rgb(197, 212, 216);
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    max-width: 100%;
+}
+
+.income {
+  border-left: 5px solid green;
+  background-color: #1e2a36;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.expense {
+  border-left: 5px solid red;
+  background-color: #1e2a36;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+#expenseList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  form {
+    max-width: 400px;
+  }
+}
